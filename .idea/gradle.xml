@@ -7,8 +7,8 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
-            <option value="C:\Users\Luka\AndroidStudioProjects\CompetitivePokemonPlanner" />
-            <option value="C:\Users\Luka\AndroidStudioProjects\CompetitivePokemonPlanner\Competitive Pokemon Planner" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Competitive Pokemon Planner" />
           </set>
         </option>
       </GradleProjectSettings>
