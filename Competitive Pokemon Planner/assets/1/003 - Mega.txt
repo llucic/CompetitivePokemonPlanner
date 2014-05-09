@@ -1,0 +1,1 @@
+{"Name":"Mega Venusaur","Abilities":["Thick Fat"],"BaseStats":[]}

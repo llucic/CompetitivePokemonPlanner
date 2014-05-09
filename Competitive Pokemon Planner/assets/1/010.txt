@@ -1,0 +1,1 @@
+{"Name":"Caterpie","Abilities":["Shield Dust"],"HiddenAbility":"Run Away","LevelUpMoves":["Tackle","String Shot","Bug Bite"],"TmMoves":[],"EggMoves":[],"TutorMoves":[],"SpecialMoves":[],"PreEvoMoves":[],"TransferMoves":["Electroweb","Snore","Snore","String Shot","Bug Bite"],"BaseStats":["45","30","35","20","20","45"]}

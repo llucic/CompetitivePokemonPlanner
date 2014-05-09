@@ -1,0 +1,1 @@
+{"Name":"Ditto","Abilities":["Limber"],"HiddenAbility":"Imposter","LevelUpMoves":["Transform"],"TmMoves":[],"EggMoves":[],"TutorMoves":[],"SpecialMoves":[],"PreEvoMoves":[],"TransferMoves":[],"BaseStats":["48","48","48","48","48","48"]}

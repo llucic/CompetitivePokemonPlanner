@@ -1,0 +1,1 @@
+{"Name":"Mega Gengar","Abilities":["Shadow Tag"],"BaseStats":[]}

@@ -1,0 +1,1 @@
+{"Name":"Kakuna","Abilities":["Shed Skin"],"HiddenAbility":"","LevelUpMoves":["Harden","Harden"],"TmMoves":[],"EggMoves":[],"TutorMoves":[],"SpecialMoves":[],"PreEvoMoves":["Poison Sting","String Shot","Bug Bite"],"TransferMoves":["Bug Bite","Electroweb","Iron Defense","Iron Defense","String Shot","Bug Bite"],"BaseStats":["45","25","50","25","25","35"]}

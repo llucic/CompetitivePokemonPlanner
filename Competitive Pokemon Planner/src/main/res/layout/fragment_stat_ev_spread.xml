@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:id="@+id/stat_name"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="Stat"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/stat_base"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:text="00"
+            android:layout_toRightOf="@id/stat_name"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"/>
+        <EditText
+            android:id="@+id/ev_value"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/stat_base"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/stat_final"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:text="000"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"/>
+        <SeekBar
+            android:id="@+id/ev_seeker"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/ev_value"
+            android:layout_toLeftOf="@id/stat_final"
+            android:gravity="center_vertical"/>
+</RelativeLayout>

@@ -1,0 +1,1 @@
+{"Name":"Mega Pinsir","Abilities":["Aerilate"],"BaseStats":[]}

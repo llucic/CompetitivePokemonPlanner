@@ -1,0 +1,1 @@
+{"Name":"Magikarp","Abilities":["Swift Swim"],"HiddenAbility":"Rattled","LevelUpMoves":["Splash","Tackle","Flail"],"TmMoves":[],"EggMoves":[],"TutorMoves":[],"SpecialMoves":[],"PreEvoMoves":[],"TransferMoves":["Bounce","Bounce"],"BaseStats":["20","10","55","15","20","80"]}

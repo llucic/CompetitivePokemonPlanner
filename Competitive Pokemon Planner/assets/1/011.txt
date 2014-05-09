@@ -1,0 +1,1 @@
+{"Name":"Metapod","Abilities":["Shed Skin"],"HiddenAbility":"","LevelUpMoves":["Harden","Harden"],"TmMoves":[],"EggMoves":[],"TutorMoves":[],"SpecialMoves":[],"PreEvoMoves":["Tackle","String Shot","Bug Bite"],"TransferMoves":["Bug Bite","Electroweb","Iron Defense","Iron Defense","String Shot","Bug Bite"],"BaseStats":["50","20","55","25","25","30"]}

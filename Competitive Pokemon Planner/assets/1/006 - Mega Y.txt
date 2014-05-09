@@ -1,0 +1,1 @@
+{"Name":"Mega Charizard Y","Abilities":["Drought"],"BaseStats":["78","104","78","159","115","100"]}

@@ -1,0 +1,1 @@
+{"Name":"Mega Mewtwo Y","Abilities":["Insomnia"],"BaseStats":["106","150","70","194","120","140"]}

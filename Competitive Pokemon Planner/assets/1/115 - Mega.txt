@@ -1,0 +1,1 @@
+{"Name":"Mega Kangaskhan","Abilities":["Parental Bond"],"BaseStats":[]}
