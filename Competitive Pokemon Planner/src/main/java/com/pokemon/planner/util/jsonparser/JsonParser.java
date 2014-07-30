@@ -5,12 +5,14 @@ import android.content.res.AssetManager;
 import android.util.Log;
 
 import com.pokemon.planner.dataobjects.PokemonBase;
+import com.pokemon.planner.dataobjects.Stats;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -109,11 +111,42 @@ public class JsonParser {
         return jObj;
     }
 
-    private PokemonBase parsePokemonData(String fileName) {
+    private PokemonBase parsePokemonData(String dexNumber) {
 
-        JSONObject jObj = getJSONFromFile(fileName);
+        JSONObject jObj = getJSONFromFile(dexNumber);
 
-        return null;
+        PokemonBase pokemonBase;
+
+        try {
+            String name = jObj.getString("Name");
+
+            String[] abilities;
+            JSONArray jArray = jObj.getJSONArray("Abilities");
+            abilities = new String[jArray.length()];
+
+            for (int i = 0; i < abilities.length; i++) {
+                abilities[i] = jArray.getString(i);
+            }
+
+            String hiddenAbility = jObj.getString("HiddenAbility");
+
+            Stats stats;
+
+            jArray = jObj.getJSONArray("BaseStats");
+
+            stats = new Stats(
+                    Double.parseDouble(jArray.getString(0)),
+                    Double.parseDouble(jArray.getString(0)),
+                    Double.parseDouble(jArray.getString(0)),
+                    Double.parseDouble(jArray.getString(0)),
+                    Double.parseDouble(jArray.getString(0)),
+                    Double.parseDouble(jArray.getString(0)));
+
+            pokemonBase = new PokemonBase(dexNumber, name, abilities, hiddenAbility, stats);
+        } catch (Exception e) {
+            return null;
+        }
+
+        return pokemonBase;
     }
-
 }

@@ -12,4 +12,6 @@ public class DataStore {
     public static List<String> pokemonNames;
     public static List<PokemonBase> pokemon;
     public static List<Pokemon> customPokemon;
+
+    public static List<Nature> natures;
 }

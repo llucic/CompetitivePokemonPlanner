@@ -18,6 +18,9 @@ import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.pokemon.planner.fragments.ChainCounter;
+import com.pokemon.planner.fragments.PokemonCreationFragment;
+
 public class MainActivity extends Activity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
@@ -49,10 +52,25 @@ public class MainActivity extends Activity
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
-        FragmentManager fragmentManager = getFragmentManager();
+        /*FragmentManager fragmentManager = getFragmentManager();
         fragmentManager.beginTransaction()
                 .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
-                .commit();
+                .commit();*/
+
+        if (position == 0) {
+
+            FragmentManager fragmentManager = getFragmentManager();
+            fragmentManager.beginTransaction()
+                    .replace(R.id.container, new PokemonCreationFragment())
+                    .commit();
+        }
+        else if (position == 1) {
+            FragmentManager fragmentManager = getFragmentManager();
+            fragmentManager.beginTransaction()
+                    .replace(R.id.container, new ChainCounter())
+                    .commit();
+        }
+
     }
 
     public void onSectionAttached(int number) {
