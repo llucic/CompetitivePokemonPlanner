@@ -44,32 +44,7 @@ public class PokemonCreationFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         if (DataStore.natures == null || DataStore.natures.size() == 0) {
-            DataStore.natures = new ArrayList<Nature>();
-            DataStore.natures.add(Nature.HARDY);
-            DataStore.natures.add(Nature.LONELY);
-            DataStore.natures.add(Nature.BRAVE);
-            DataStore.natures.add(Nature.ADAMANT);
-            DataStore.natures.add(Nature.NAUGHTY);
-            DataStore.natures.add(Nature.BOLD);
-            DataStore.natures.add(Nature.DOCILE);
-            DataStore.natures.add(Nature.RELAXED);
-            DataStore.natures.add(Nature.IMPISH);
-            DataStore.natures.add(Nature.LAX);
-            DataStore.natures.add(Nature.TIMID);
-            DataStore.natures.add(Nature.HASTY);
-            DataStore.natures.add(Nature.SERIOUS);
-            DataStore.natures.add(Nature.JOLLY);
-            DataStore.natures.add(Nature.NAIVE);
-            DataStore.natures.add(Nature.MODEST);
-            DataStore.natures.add(Nature.MILD);
-            DataStore.natures.add(Nature.QUIET);
-            DataStore.natures.add(Nature.BASHFUL);
-            DataStore.natures.add(Nature.RASH);
-            DataStore.natures.add(Nature.CALM);
-            DataStore.natures.add(Nature.GENTLE);
-            DataStore.natures.add(Nature.SASSY);
-            DataStore.natures.add(Nature.CAREFUL);
-            DataStore.natures.add(Nature.QUIRKY);
+            DataStore.initNatures();
         }
     }
 
@@ -81,7 +56,7 @@ public class PokemonCreationFragment extends Fragment {
             return null;
         }
 
-        /*pokemonChooser = (AutoCompleteTextView)v.findViewById(R.id.pokemon_choice);
+        pokemonChooser = (AutoCompleteTextView)v.findViewById(R.id.pokemon_choice);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(),
                 android.R.layout.simple_list_item_1, getPokemonNames());
 
@@ -92,11 +67,11 @@ public class PokemonCreationFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 PokemonCreationFragment.this.chosenPokemonBase = DataStore.pokemon.get(i);
             }
-        });*/
+        });
 
         natureChooser = (AutoCompleteTextView)v.findViewById(R.id.pokemon_nature);
         natureChooser.setThreshold(1);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(),
+        adapter = new ArrayAdapter<String>(getActivity(),
                 android.R.layout.simple_list_item_1, getNatures());
 
         natureChooser.setAdapter(adapter);

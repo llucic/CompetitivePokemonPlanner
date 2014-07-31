@@ -111,7 +111,7 @@ public class JsonParser {
         return jObj;
     }
 
-    private PokemonBase parsePokemonData(String dexNumber) {
+    public PokemonBase parsePokemonData(String dexNumber) {
 
         JSONObject jObj = getJSONFromFile(dexNumber);
 
