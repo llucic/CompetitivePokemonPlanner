@@ -1,5 +1,7 @@
 package com.pokemon.planner.dataobjects;
 
+import java.util.List;
+
 /**
  * Created by Luka on 2/27/14.
  */
@@ -10,6 +12,7 @@ public class PokemonBase {
     private String[] abilities;
     private String hiddenAbility;
     private Stats baseStats;
+    private List<String> moves;
 
     public PokemonBase(String dexNumber, String name, String[] abilities, String hiddenAbility, Stats stats) {
         this.dexNumber = dexNumber;
@@ -58,4 +61,5 @@ public class PokemonBase {
     public void setBaseStats(Stats baseStats) {
         this.baseStats = baseStats;
     }
+
 }

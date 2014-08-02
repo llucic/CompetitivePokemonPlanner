@@ -30,6 +30,7 @@ public class PokemonCreationFragment extends Fragment {
     PokemonBase chosenPokemonBase;
 
     AutoCompleteTextView pokemonChooser;
+    AutoCompleteTextView abilityChooser;
     AutoCompleteTextView natureChooser;
     EditText levelChooser;
     EditText hpEvValue;
@@ -46,6 +47,10 @@ public class PokemonCreationFragment extends Fragment {
         if (DataStore.natures == null || DataStore.natures.size() == 0) {
             DataStore.initNatures();
         }
+
+        if (DataStore.pokemon == null || DataStore.pokemon.size() == 0) {
+            DataStore.initPokemon(getActivity());
+        }
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -55,6 +60,8 @@ public class PokemonCreationFragment extends Fragment {
         if (v == null) {
             return null;
         }
+
+        abilityChooser = (AutoCompleteTextView)v.findViewById(R.id.pokemon_ability);
 
         pokemonChooser = (AutoCompleteTextView)v.findViewById(R.id.pokemon_choice);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(),
@@ -66,6 +73,11 @@ public class PokemonCreationFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 PokemonCreationFragment.this.chosenPokemonBase = DataStore.pokemon.get(i);
+                ArrayAdapter<String> abilityAdapter = new ArrayAdapter<String>(getActivity(),
+                        android.R.layout.simple_list_item_1,
+                        getPokemonAbilities(PokemonCreationFragment.this.chosenPokemonBase));
+
+                abilityChooser.setAdapter(abilityAdapter);
             }
         });
 
@@ -123,5 +135,17 @@ public class PokemonCreationFragment extends Fragment {
             natures[DataStore.natures.indexOf(nature)] = nature.toString();
         }
         return natures;
+    }
+
+    private String[] getPokemonAbilities(PokemonBase pokemon) {
+        String[] abilities = new String[pokemon.getAbilities().length + 1];
+        for (int i = 0; i < pokemon.getAbilities().length; i++) {
+            abilities[i] = pokemon.getAbilities()[i];
+        }
+
+        if (pokemon.getHiddenAbility() != null && !pokemon.getHiddenAbility().equals("")) {
+            abilities[pokemon.getAbilities().length] = pokemon.getHiddenAbility();
+        }
+        return abilities;
     }
 }

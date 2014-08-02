@@ -7,6 +7,7 @@ import com.pokemon.planner.dataobjects.PokemonBase;
 import com.pokemon.planner.util.jsonparser.JsonParser;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -51,9 +52,18 @@ public class DataStore {
     public static void initPokemon(Context c) {
         JsonParser parser = new JsonParser();
         pokemon = new ArrayList<PokemonBase>();
+        List<Integer> megas = new ArrayList<Integer>(Arrays.asList(3, 9, 65, 94, 115, 127, 130, 142));
         parser.initContext(c);
         for (int i = 0; i < 151; i++) {
-            pokemon.add(parser.parsePokemonData("" + i));
+            pokemon.add(parser.parsePokemonData(i + ""));
+            if (megas.contains(i)) {
+                pokemon.add(parser.parsePokemonData(i + " - Mega"));
+            }
+
+            if (i == 6 || i == 150) {
+                pokemon.add(parser.parsePokemonData(i + " - Mega X"));
+                pokemon.add(parser.parsePokemonData(i + " - Mega Y"));
+            }
         }
     }
 }
