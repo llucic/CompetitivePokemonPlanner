@@ -13,13 +13,16 @@
     <string name="create_new">Create New</string>
     <string name="no_pokemon">No Pokemon Available</string>
 
-    <string-array name="natures_array">
-        <item>Hardy</item>
-        <item>Lonely</item>
-        <item>Brave</item>
-    </string-array>
-
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="pokemon_species">Pokemon Species</string>
+
+    <string-array name="stats">
+        <item>HP</item>
+        <item>Attack</item>
+        <item>Defence</item>
+        <item>Sp. Attack</item>
+        <item>Sp. Defence</item>
+        <item>Speed</item>
+    </string-array>
 
 </resources>
