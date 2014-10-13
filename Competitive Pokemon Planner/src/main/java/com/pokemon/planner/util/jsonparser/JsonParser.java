@@ -21,6 +21,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Luka on 3/6/14.
@@ -83,6 +85,7 @@ public class JsonParser {
 
     private JSONObject getJSONFromFile(String fileName) {
         AssetManager am = context.getAssets();
+
         try {
             InputStream is = am.open(fileName + ".txt");
 
@@ -92,7 +95,7 @@ public class JsonParser {
             String line = null;
 
             while ((line = reader.readLine()) != null) {
-                sb.append(line + "\n");
+                sb.append(line).append("\n");
             }
             is.close();
             json = sb.toString();
@@ -111,7 +114,13 @@ public class JsonParser {
         return jObj;
     }
 
-    private PokemonBase parsePokemonData(String dexNumber) {
+    public PokemonBase parsePokemonData(String dexNumber) {
+        int dexValue = Integer.parseInt(dexNumber);
+        if (dexValue <= 151) {
+            dexNumber = "1\\" + dexNumber;
+        } else {
+            return null;
+        }
 
         JSONObject jObj = getJSONFromFile(dexNumber);
 
@@ -148,5 +157,21 @@ public class JsonParser {
         }
 
         return pokemonBase;
+    }
+
+    public List<String> parseItems() {
+        List<String> items = new ArrayList<String>();
+        JSONObject jObj = getJSONFromFile("Berries");
+        try {
+        } catch (Exception e) {
+            items = new ArrayList<String>();
+        }
+        jObj = getJSONFromFile("Items");
+        try {
+        } catch (Exception e) {
+            items = new ArrayList<String>();
+        }
+
+        return items;
     }
 }
