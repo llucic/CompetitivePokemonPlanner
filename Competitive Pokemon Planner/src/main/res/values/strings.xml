@@ -25,4 +25,8 @@
         <item>Speed</item>
     </string-array>
 
+    <string-array name="natures_array">
+        <item>Nature1</item>
+    </string-array>
+
 </resources>
