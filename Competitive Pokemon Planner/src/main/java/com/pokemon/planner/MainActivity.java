@@ -61,13 +61,13 @@ public class MainActivity extends Activity
 
             FragmentManager fragmentManager = getFragmentManager();
             fragmentManager.beginTransaction()
-                    .replace(R.id.container, new PokemonCreationFragment())
+                    .replace(R.id.container, PlaceholderFragment.newInstance(0))
                     .commit();
         }
         else if (position == 1) {
             FragmentManager fragmentManager = getFragmentManager();
             fragmentManager.beginTransaction()
-                    .replace(R.id.container, new ChainCounter())
+                    .replace(R.id.container, PlaceholderFragment.newInstance(1))
                     .commit();
         }
 
@@ -115,6 +115,10 @@ public class MainActivity extends Activity
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
         if (id == R.id.action_settings) {
+            FragmentManager fragmentManager = getFragmentManager();
+            fragmentManager.beginTransaction()
+                    .replace(R.id.container, new SettingsFragment())
+                    .commit();
             return true;
         }
         return super.onOptionsItemSelected(item);

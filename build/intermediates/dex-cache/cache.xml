@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<pre-dex-items>
+<items version="2" >
 
     <item
-        dex="C:\Users\Luka\Documents\GitHub\CompetitivePokemonPlanner\Competitive Pokemon Planner\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-79e42da7c2657068d681cf877be8b4cc06e3cb7a.jar"
-        jar="C:\Program Files (x86)\Android\android-studio\sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        jar="C:\Users\llucic\Documents\GitHub\CompetitivePokemonPlanner\Competitive Pokemon Planner\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\libs\internal_impl-21.0.2.jar"
         jumboMode="false"
-        revision="19.1.0"
-        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
+        revision="21.1.1"
+        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
+        <dex dex="C:\Users\llucic\Documents\GitHub\CompetitivePokemonPlanner\Competitive Pokemon Planner\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-2119ac5fb2cc5da441afc4cb43cee2e4351b4881.jar" />
+    </item>
     <item
-        dex="C:\Users\Luka\Documents\GitHub\CompetitivePokemonPlanner\Competitive Pokemon Planner\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-58794408673b2f940f0db4945bb12663b762eb67.jar"
-        jar="C:\Users\Luka\Documents\GitHub\CompetitivePokemonPlanner\Competitive Pokemon Planner\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
+        jar="C:\Users\llucic\Desktop\Android + Eclipse\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.2\support-annotations-21.0.2.jar"
         jumboMode="false"
-        revision="19.1.0"
-        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
+        revision="21.1.1"
+        sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6">
+        <dex dex="C:\Users\llucic\Documents\GitHub\CompetitivePokemonPlanner\Competitive Pokemon Planner\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-8ce6427f83e9a1c8f6a35d8836b31cdd8240f791.jar" />
+    </item>
     <item
-        dex="C:\Users\Luka\Documents\GitHub\CompetitivePokemonPlanner\Competitive Pokemon Planner\build\intermediates\pre-dexed\debug\classes-cc569d28e8e3033eefa2ffbfb8151b85d9c0d825.jar"
-        jar="C:\Users\Luka\Documents\GitHub\CompetitivePokemonPlanner\Competitive Pokemon Planner\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
+        jar="C:\Users\llucic\Documents\GitHub\CompetitivePokemonPlanner\Competitive Pokemon Planner\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\classes.jar"
         jumboMode="false"
-        revision="19.1.0"
-        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
+        revision="21.1.1"
+        sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
+        <dex dex="C:\Users\llucic\Documents\GitHub\CompetitivePokemonPlanner\Competitive Pokemon Planner\build\intermediates\pre-dexed\debug\classes-2e20c3b17dd6ee48a75e3ce64b38d7264e33e47f.jar" />
+    </item>
 
-</pre-dex-items>
+</items>

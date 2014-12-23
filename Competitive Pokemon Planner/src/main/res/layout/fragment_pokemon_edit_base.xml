@@ -103,7 +103,7 @@
             android:layout_alignParentRight="true"/>
     </RelativeLayout>
 
-    <LinearLayout
+    <!--<LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -269,10 +269,7 @@
                 android:layout_marginLeft="10dp"
                 android:text="0" />
         </LinearLayout>
-    </LinearLayout>
-
-    <!--<include
-        layout="@layout/fragment_stat_spread" />
+    </LinearLayout>-->
 
     <include
         layout="@layout/fragment_stat_spread" />
@@ -287,7 +284,10 @@
         layout="@layout/fragment_stat_spread" />
 
     <include
-        layout="@layout/fragment_stat_spread" />-->
+        layout="@layout/fragment_stat_spread" />
+
+    <include
+        layout="@layout/fragment_stat_spread" />
 
     <LinearLayout
         android:layout_width="match_parent"

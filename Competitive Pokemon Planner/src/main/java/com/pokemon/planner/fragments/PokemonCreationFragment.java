@@ -55,7 +55,7 @@ public class PokemonCreationFragment extends Fragment {
         }
 
         if (DataStore.pokemon == null || DataStore.pokemon.size() == 0) {
-            DataStore.initPokemon(getActivity());
+            //DataStore.initPokemon(getActivity());
         }
     }
 
@@ -94,7 +94,7 @@ public class PokemonCreationFragment extends Fragment {
 
         natureChooser.setAdapter(adapter);
 
-        hpTotalValue = (TextView)v.findViewById(R.id.lbl_total_hp);
+        /*hpTotalValue = (TextView)v.findViewById(R.id.lbl_total_hp);
         hpTotalValue.setText("" + Calculator.getHpForLevel(100,
                 (int)chosenPokemonBase.getBaseStats().hp,
                 0,
@@ -129,7 +129,7 @@ public class PokemonCreationFragment extends Fragment {
                 0,
                 31,
                 getNatureModifier(getResources().getStringArray(R.array.stats)[5])));
-
+*/
         levelChooser = (EditText)v.findViewById(R.id.pokemon_level);
         levelChooser.setFilters(new InputFilter[] {new InputFilterMinMax(1,100)});
         levelChooser.addTextChangedListener(new TextWatcher() {
@@ -162,7 +162,7 @@ public class PokemonCreationFragment extends Fragment {
         });
         levelChooser.setText("1");
 
-        hpEvValue = (EditText)v.findViewById(R.id.txt_hp_ev);
+        /*hpEvValue = (EditText)v.findViewById(R.id.txt_hp_ev);
         hpEvValue.setFilters(new InputFilter[] {new InputFilterMinMax(0,252)});
         hpEvValue.addTextChangedListener(new TextWatcher() {
             @Override
@@ -293,7 +293,7 @@ public class PokemonCreationFragment extends Fragment {
             }
         });
         speEvValue.setText("0");
-
+*/
         return v;
     }
 
