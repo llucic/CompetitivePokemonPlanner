@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Material.Light">
+        <!-- Customize your theme here. -->
+        <item name="android:textViewStyle">@android:style/TextAppearance.DeviceDefault</item>
+    </style>
+
+    <style name="OmegaRubyTheme" parent="AppTheme">
+
+    </style>
+
+    <style name="AlphaSapphireTheme" parent="AppTheme">
+
+    </style>
+
+    <style name="XTheme" parent="AppTheme">
+        <item name="android:colorPrimary">@color/XPrimary</item>
+        <item name="android:colorPrimaryDark">@color/XSecondary</item>
+        <item name="android:statusBarColor">@color/XSecondary</item>
+    </style>
+
+    <style name="YTheme" parent="AppTheme">
+        <item name="android:colorPrimary">@color/YPrimary</item>
+        <item name="android:colorPrimaryDark">@color/YSecondary</item>
+        <item name="android:statusBarColor">@color/YSecondary</item>
+    </style>
+
+</resources>

@@ -5,4 +5,8 @@
         android:title="Level"
         android:summary="Level 50 selected"
         android:defaultValue="50"/>
+    <ListPreference
+        android:key="pref_theme"
+        android:title="Theme"
+        android:summary="Choose Theme"/>
 </PreferenceScreen>

@@ -1,5 +1,6 @@
 package com.pokemon.planner;
 
+import android.app.Application;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.Preference;
@@ -37,6 +38,13 @@ public class SettingsFragment extends PreferenceFragment implements SharedPrefer
         if (key.equals("pref_level")) {
             Preference levelPreference = findPreference(key);
             levelPreference.setSummary("Level " + sharedPreferences.getString(key, "50") + " selected");
+        }
+
+        if (key.equals("pref_theme")) {
+            Preference themePreference = findPreference(key);
+            themePreference.setSummary("Pokemon " + sharedPreferences.getString(key, "") + "Theme selected");
+
+            String theme = sharedPreferences.getString(key, "");
         }
     }
 }

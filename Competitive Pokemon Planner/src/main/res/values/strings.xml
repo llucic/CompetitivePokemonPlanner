@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Competitive Pokemon Planner</string>
+    <string name="app_name">Planner</string>
     <string name="title_section1">Planner</string>
     <string name="title_section2">Chain Counter</string>
     <string name="title_section3">Section 3</string>
@@ -27,6 +27,32 @@
 
     <string-array name="natures_array">
         <item>Nature1</item>
+    </string-array>
+
+    <string-array name="themes_array">
+        <item>Omega Ruby</item>
+        <item>Alpha Sapphire</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Black</item>
+        <item>White</item>
+        <item>Heart Gold</item>
+        <item>Soul Silver</item>
+        <item>Diamond</item>
+        <item>Pearl</item>
+        <item>Platinum</item>
+        <item>Fire Red</item>
+        <item>Leaf Green</item>
+        <item>Ruby</item>
+        <item>Sapphire</item>
+        <item>Emerald</item>
+        <item>Gold</item>
+        <item>Silver</item>
+        <item>Crystal</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+        <item>Yellow</item>
     </string-array>
 
 </resources>

@@ -6,6 +6,7 @@
     android:orientation="vertical"
     android:padding="5dp">
 
+    <!--Pokemon-->
     <LinearLayout
         android:id="@+id/pokemon_editor_layout"
         android:layout_width="match_parent"
@@ -13,97 +14,102 @@
         android:orientation="vertical"
         android:visibility="visible">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        <!--Pokemon-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/lbl_pokemon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pokemon_species" />
+            <TextView
+                android:id="@+id/lbl_pokemon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pokemon_species" />
 
-        <AutoCompleteTextView
-            android:id="@+id/pokemon_choice"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:imeOptions="actionNext"
-            android:layout_alignParentRight="true" />
-    </RelativeLayout>
+            <AutoCompleteTextView
+                android:id="@+id/pokemon_choice"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
 
-    <RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+        <!--Ability-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/lbl_ability"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ability" />
+            <TextView
+                android:id="@+id/lbl_ability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ability" />
 
-    <AutoCompleteTextView
-        android:id="@+id/pokemon_ability"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:imeOptions="actionNext"
-        android:layout_alignParentRight="true" />
-</RelativeLayout>
+            <AutoCompleteTextView
+                android:id="@+id/pokemon_ability"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        <!--hold item-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/lbl_item"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Item" />
+            <TextView
+                android:id="@+id/lbl_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item" />
 
-        <AutoCompleteTextView
-            android:id="@+id/pokemon_item"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:imeOptions="actionNext"
-            android:layout_alignParentRight="true" />
-    </RelativeLayout>
+            <AutoCompleteTextView
+                android:id="@+id/pokemon_item"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        <!--Level-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/lbl_level"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Level" />
+            <TextView
+                android:id="@+id/lbl_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Level" />
 
-        <EditText
-            android:id="@+id/pokemon_level"
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:inputType="number" />
-    </RelativeLayout>
+            <EditText
+                android:id="@+id/pokemon_level"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:inputType="number" />
+        </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        <!--Nature-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/lbl_nature"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Nature" />
+            <TextView
+                android:id="@+id/lbl_nature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nature" />
 
-        <AutoCompleteTextView
-            android:id="@+id/pokemon_nature"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:imeOptions="actionNext"
-            android:layout_alignParentRight="true"/>
-    </RelativeLayout>
+            <AutoCompleteTextView
+                android:id="@+id/pokemon_nature"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
 
-    <!--<LinearLayout
+        <!--<LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -271,25 +277,7 @@
         </LinearLayout>
     </LinearLayout>-->
 
-    <include
-        layout="@layout/fragment_stat_spread" />
-
-    <include
-        layout="@layout/fragment_stat_spread" />
-
-    <include
-        layout="@layout/fragment_stat_spread" />
-
-    <include
-        layout="@layout/fragment_stat_spread" />
-
-    <include
-        layout="@layout/fragment_stat_spread" />
-
-    <include
-        layout="@layout/fragment_stat_spread" />
-
-    <LinearLayout
+        <!--<LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -323,10 +311,11 @@
                 android:imeOptions="actionDone"
                 android:layout_weight="1"/>
         </LinearLayout>
+    </LinearLayout>-->
+
     </LinearLayout>
 
-        </LinearLayout>
-
+    <!--Loader-->
     <LinearLayout
         android:id="@+id/loader_layout"
         android:layout_width="match_parent"
