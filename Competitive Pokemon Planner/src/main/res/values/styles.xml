@@ -11,4 +11,33 @@
         <item name="android:background">@color/XPrimary</item>
     </style>
 
+    <style name="OmegaRubyTheme" parent="AppTheme">
+
+    </style>
+
+    <style name="AlphaSapphireTheme" parent="AppTheme">
+
+    </style>
+
+    <style name="XTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/XActionBar</item>
+    </style>
+
+    <style name="YTheme" parent="AppTheme">
+        <item name="android:actionBarStyle">@style/YActionBar</item>
+    </style>
+
+    <style name="XActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/XPrimary</item>
+    </style>
+    <style name="YActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/YPrimary</item>
+    </style>
+    <style name="ORActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/YPrimary</item>
+    </style>
+    <style name="ASActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/XPrimary</item>
+    </style>
+
 </resources>

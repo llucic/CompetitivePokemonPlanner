@@ -64,8 +64,6 @@ public class PokemonCreationFragment extends Fragment {
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_pokemon_edit_base, container, false);
 
-        getActivity().setTheme(R.style.YTheme);
-
         if (v == null) {
             return null;
         }

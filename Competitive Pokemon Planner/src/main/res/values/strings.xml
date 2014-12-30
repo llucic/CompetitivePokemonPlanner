@@ -30,11 +30,11 @@
     </string-array>
 
     <string-array name="themes_array">
-        <item>Omega Ruby</item>
-        <item>Alpha Sapphire</item>
+        <!--<item>Omega Ruby</item>
+        <item>Alpha Sapphire</item>-->
         <item>X</item>
         <item>Y</item>
-        <item>Black</item>
+        <!--<item>Black</item>
         <item>White</item>
         <item>Heart Gold</item>
         <item>Soul Silver</item>
@@ -52,7 +52,7 @@
         <item>Red</item>
         <item>Green</item>
         <item>Blue</item>
-        <item>Yellow</item>
+        <item>Yellow</item>-->
     </string-array>
 
 </resources>

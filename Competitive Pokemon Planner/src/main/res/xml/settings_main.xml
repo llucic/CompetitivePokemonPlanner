@@ -8,5 +8,7 @@
     <ListPreference
         android:key="pref_theme"
         android:title="Theme"
-        android:summary="Choose Theme"/>
+        android:summary="Choose Theme"
+        android:entryValues="@array/themes_array"
+        android:entries="@array/themes_array"/>
 </PreferenceScreen>
