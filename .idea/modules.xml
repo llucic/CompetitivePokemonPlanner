@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CompetitivePokemonPlanner.iml" filepath="$PROJECT_DIR$/CompetitivePokemonPlanner.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Competitive Pokemon Planner/Planner.iml" filepath="$PROJECT_DIR$/Competitive Pokemon Planner/Planner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Planner/Planner.iml" filepath="$PROJECT_DIR$/Planner/Planner.iml" />
     </modules>
   </component>
 </project>

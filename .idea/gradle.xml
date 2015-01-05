@@ -9,7 +9,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/Competitive Pokemon Planner" />
+            <option value="$PROJECT_DIR$/Planner" />
           </set>
         </option>
       </GradleProjectSettings>
