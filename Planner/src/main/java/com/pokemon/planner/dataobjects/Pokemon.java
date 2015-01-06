@@ -5,36 +5,14 @@ package com.pokemon.planner.dataobjects;
  */
 public class Pokemon {
     private int level;
-    private Stats base;
+    private PokemonBase base;
     private Stats ev;
     private Stats iv;
     private Stats nature;
 
-    public Pokemon(int level) {
+    public Pokemon (PokemonBase base, int level) {
+        this.base = base;
         this.level = level;
-    }
-
-    public Pokemon(int level,
-                   double hp,
-                   double attack,
-                   double defence,
-                   double sp_attack,
-                   double sp_defence,
-                   double speed) {
-        this.level = level;
-
-        setBaseStats(hp, attack, defence, sp_attack, sp_defence, speed);
-        setEvSpread(hp, attack, defence, sp_attack, sp_defence, speed);
-        setIvSpread(hp, attack, defence, sp_attack, sp_defence, speed);
-    }
-
-    public void setBaseStats(double hp,
-                             double attack,
-                             double defence,
-                             double sp_attack,
-                             double sp_defence,
-                             double speed) {
-        base = new Stats(hp, attack, defence, sp_attack, sp_defence, speed);
     }
 
     public void setEvSpread(double hp,
@@ -44,6 +22,10 @@ public class Pokemon {
                              double sp_defence,
                              double speed) {
         ev = new Stats(hp, attack, defence, sp_attack, sp_defence, speed);
+    }
+
+    public void setDefaultIvSpread() {
+        iv = new Stats(31,31,31,31,31,31);
     }
 
     public void setIvSpread(double hp,
@@ -59,15 +41,11 @@ public class Pokemon {
         return level;
     }
 
-    public Stats getBase() {
-        return base;
-    }
-
-    public Stats getEv() {
+    public Stats getEvSpread() {
         return ev;
     }
 
-    public Stats getIv() {
+    public Stats getIvSpread() {
         return iv;
     }
 }

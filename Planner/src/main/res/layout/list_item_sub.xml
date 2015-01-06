@@ -2,6 +2,33 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/lblDetailNature"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5sp"
+        android:textSize="17sp"
+        android:text="Jolly"/>
+    <TextView
+        android:id="@+id/lblDetailAbility"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5sp"
+        android:textSize="17sp"
+        android:text="LightningRod"/>
+    <TextView
+        android:id="@+id/lblDetailStatSpread"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5sp"
+        android:textSize="17sp"
+        android:text="252 HP 252 Def"/>
+    <TextView
+        android:id="@+id/lblDetailMoves"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5sp"
+        android:textSize="17sp"
+        android:text="Tackle"/>
 </LinearLayout>
