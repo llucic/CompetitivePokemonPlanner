@@ -19,4 +19,17 @@ public class Stats {
         this.sp_defence = sp_defence;
         this.speed = speed;
     }
+
+    @Override
+    public String toString() {
+        String s = "";
+
+        if (hp > 0) s += hp + " HP ";
+        if (attack > 0) s += attack + " Atk ";
+        if (defence > 0) s += defence + " Def ";
+        if (sp_attack > 0) s += sp_attack + " Sp. Atk ";
+        if (sp_defence > 0) s += sp_defence + " Sp. Def ";
+        if (speed > 0) s += speed + " Spe ";
+        return s;
+    }
 }

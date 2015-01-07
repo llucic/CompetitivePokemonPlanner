@@ -9,6 +9,8 @@ public class Pokemon {
     private Stats ev;
     private Stats iv;
     private Stats nature;
+    private boolean hasHiddenAbility;
+    private int abilitySlot;
 
     public Pokemon (PokemonBase base, int level) {
         this.base = base;
@@ -47,5 +49,21 @@ public class Pokemon {
 
     public Stats getIvSpread() {
         return iv;
+    }
+
+    public PokemonBase getBase() {
+        return base;
+    }
+
+    public void setBase(PokemonBase base) {
+        this.base = base;
+    }
+
+    public String getAbility() {
+        if (hasHiddenAbility) {
+            return base.getHiddenAbility();
+        }
+
+        return base.getAbilities()[abilitySlot];
     }
 }
